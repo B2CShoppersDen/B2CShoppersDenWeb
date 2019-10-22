@@ -1,4 +1,4 @@
-package src.com.b2cshoppersden.controller;
+package com.b2cshoppersden.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class AdminController
+ * Servlet implementation class CustomerController
  */
-@WebServlet("/AdminController")
-public class AdminController extends HttpServlet {
+@WebServlet("/CustomerController")
+public class CustomerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AdminController() {
+    public CustomerController() {
         super();
         // TODO Auto-generated constructor stub
     }

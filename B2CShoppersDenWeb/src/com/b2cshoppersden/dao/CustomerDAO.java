@@ -16,13 +16,14 @@ import com.b2cshoppersden.model.ViewProductsModel;
 import com.b2cshoppersden.service.AdminServiceImpl;
 import com.b2cshoppersden.utilities.ConnectionManager;
 
+
 public class CustomerDAO {
 	Logger logger=Logger.getLogger(CustomerDAO.class.getName());
 	//@SuppressWarnings({ "static-access", "unused" })
 	//public modelClassName customerVerification(CustomerLoginModel customerLoginModel) throws ClassNotFoundException,SQLException{
 	public boolean customerVerification(CustomerLoginModel customerLoginModel) throws ClassNotFoundException,SQLException{
 		// TODO Auto-generated method stub
-		logger.info("Admin dao called");
+		logger.info("customer dao called");
 		try 
 		{
 			String username;
@@ -52,7 +53,7 @@ public class CustomerDAO {
 			System.out.println("UserName or password is Incorrect");
 			e.printStackTrace();
 			}
-		logger.info("Admin dao completed");
+		logger.info("customer dao completed");
 		return false; //return model
 }
 	
@@ -65,7 +66,7 @@ public class CustomerDAO {
 		try {	
 			ConnectionManager connectionManager= new ConnectionManager();
 			Connection connection = connectionManager.openConnection1();
-			String query="select * from products where product_name=?";
+			String query="select * from product where product_name=?";
 			PreparedStatement statement = connection.prepareStatement(query);
 			//statement.setString(1,viewProductsModel.getProductName());
 			statement.setInt(1,viewProductsModel.getProductId());

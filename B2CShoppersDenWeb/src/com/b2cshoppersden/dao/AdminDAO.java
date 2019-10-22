@@ -10,7 +10,7 @@ import com.b2cshoppersden.model.AdminLoginModel;
 import com.b2cshoppersden.model.DeleteProductModel;
 import com.b2cshoppersden.model.ViewTransactionsModel;
 import com.b2cshoppersden.utilities.ConnectionManager;
-import com.b2cshoppersden.view.AdminLoginView;
+
 
 
 public class AdminDAO {
